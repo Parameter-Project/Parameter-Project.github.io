@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yatır - Portfolio Optimization App</title>
+    <style>
+        :root {
+            --primary-color: #1e3799;
+            --secondary-color: #4a69bd;
+            --accent-color: #60a3bc;
+            --background-color: #f1f2f6;
+            --text-color: #333;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        .header-title {
+            font-size: 2.5em;
+            margin-bottom: 0.5rem;
+        }
+        .header-subtitle {
+            font-size: 1.2em;
+            font-weight: normal;
+            margin-top: 0;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 10px;
+            margin-top: 2rem;
+        }
+        .reports-container {
+            background-color: white;
+            padding: 1.5rem;
+            margin: 1rem 0 2rem;
+            border-radius: 15px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .reports-container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+        }
+        .reports-list {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 0;
+        }
+        .reports-list li {
+            flex-basis: calc(50% - 10px);
+            margin: 5px 0;
+        }
+        .reports-list a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-weight: bold;
+            display: block;
+            padding: 10px;
+            background-color: var(--background-color);
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .reports-list a:hover {
+            background-color: var(--accent-color);
+            color: white;
+        }
+        .team {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 1rem 0;
+        }
+        .team-member {
+            width: 250px;
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+        .team-member h3 {
+            margin: 10px 0;
+            color: var(--secondary-color);
+        }
+        .team-member p {
+            font-size: 0.9em;
+        }
+        .finance-detail {
+            background-color: var(--accent-color);
+            color: white;
+            padding: 10px;
+            margin: 20px 0;
+            border-radius: 5px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="header-title">Parameter Project</h1>
+            <h2 class="header-subtitle">Portfolio Optimization App</h2>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#reports">Reports</a></li>
+                    <li><a href="#team">Our Team</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="home">
+            <h2>Welcome to ParaMeter Project</h2>
+            <p>ParaMeter Project is an innovative finance application designed to revolutionize portfolio optimization. Our goal is to empower investors with advanced algorithms and user-friendly interfaces to make informed financial decisions.</p>
+            <div class="finance-detail">
+                "The best investment you can make is in yourself." - Warren Buffett
+            </div>
+        </section>
+
+        <section id="reports">
+            <h2>Project Reports</h2>
+            <div class="reports-container">
+                <ul class="reports-list">
+                    <li><a href="#">Project Specifications Report</a></li>
+                    <li><a href="#">Market Analysis Report</a></li>
+                    <li><a href="#">Algorithm Design Report</a></li>
+                    <li><a href="#">User Interface Prototype</a></li>
+                    <li><a href="#">Final Implementation Report</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="team">
+            <h2>Our Team</h2>
+            <div class="team">
+                <div class="team-member">
+                    <img src="/api/placeholder/150/150" alt="Muti Kara">
+                    <h3>Muti Kara</h3>
+                    <p>Financial algorithms specialist. Expert in quantitative analysis and risk assessment models.</p>
+                </div>
+                <div class="team-member">
+                    <img src="/api/placeholder/150/150" alt="Abdullah Samed Uslu">
+                    <h3>Abdullah Samed Uslu</h3>
+                    <p>UI/UX designer focusing on intuitive financial data visualization and user-friendly interfaces.</p>
+                </div>
+                <div class="team-member">
+                    <img src="/api/placeholder/150/150" alt="Tuna Saygin">
+                    <h3>Tuna Saygin</h3>
+                    <p>Backend developer specializing in high-frequency trading systems and database optimization.</p>
+                </div>
+                <div class="team-member">
+                    <img src="/api/placeholder/150/150" alt="Sila Ozel">
+                    <h3>Sila Ozel</h3>
+                    <p>Project manager with expertise in fintech product development and regulatory compliance.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About ParaMeter Project</h2>
+            <p>ParaMeter Project, meaning "investor" in Turkish, is a cutting-edge portfolio optimization application developed by a team of finance and technology enthusiasts. Our mission is to democratize advanced financial tools, making them accessible to both individual and institutional investors.</p>
+            <div class="finance-detail">
+                "In investing, what is comfortable is rarely profitable." - Robert Arnott
+            </div>
+        </section>
+    </main>
+</body>
+</html>
